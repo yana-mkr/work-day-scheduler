@@ -19,26 +19,25 @@ $(saveBtn).on("click", function(){
     $("hour-14.description").val(localStorage.getItem("hour-14"))
     $("hour-15.description").val(localStorage.getItem("hour-15"))
     $("hour-16.description").val(localStorage.getItem("hour-16"))
-    $("hour-17.description").val(localStorage.getItem("hour-17"))
+    $("hour-17.description").val(localStorage.getItem("hour-"))
 
 })})
 
 function updateHour() {
 
-   var current = moment();
-
+   var current = moment().hour();
     $(".time-block").each(function() {
        var hour = parseInt($(this).attr("id").split("-")[1]);
         if (hour < current) {
             $(this).addClass("past")
         } else if (hour === current) {
-            $(this).removeClass("past"),
+            $(this).removeClass("past")
             $(this).addClass("present")
-        } else (hour > current); {
-            $(this).removeClass("past"),
-            $(this).removeClass("present"),
+        } else { (hour > current) 
+            $(this).removeClass("past")
+            $(this).removeClass("present")
             $(this).addClass("future")
-        }
+        } 
 })}
 
 updateHour();
