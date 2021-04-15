@@ -1,5 +1,9 @@
 # Work Day Scheduler Starter Code
 
+Live URL: https://yana-mkr.github.io/work-day-scheduler/
+
+Git URL: https://github.com/yana-mkr/work-day-scheduler
+
 A challenge creating a work day schedule using Bootstrap, jQuery, and Moment.js
 
 The schedule is color coded based on the current hour and if the calendar time is in the past or present.
